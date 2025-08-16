@@ -1,0 +1,11 @@
+id,question,llm_answer,ground_truth,correct,notes
+1,Games played,...,...,true/false,...
+2,Top scorer & margin,...,...,true/false,rounding
+3,Mean vs Median,...,...,true/false,outlier sensitivity
+4,Most improved,...,...,true/false,metric definition
+5,Coach scenario,...,...,true/false,needs more evidence
+6,Clutch analysis,...,...,true/false,data limitations
+7,Turnover impact,...,...,true/false,assumptions
+8,Defensive MVP,...,...,true/false,normalization
+9,Outliers removed,...,...,true/false,effect size
+10,Viz suggestion,...,...,true/false,qualitative
