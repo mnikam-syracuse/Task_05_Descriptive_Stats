@@ -1,60 +1,55 @@
-# Task 05: Descriptive Statistics and LLM Interaction
+# 📊 Task 05: Descriptive Statistics and LLM Evaluation  
 
-## Overview
-This project demonstrates how to use a small dataset and interact with a Large Language Model (LLM) such as ChatGPT to answer natural language questions about that dataset. The primary goal is to evaluate LLM performance on structured data and determine its ability to provide accurate insights.
+This repository contains my work for **Research Task 05**. The task is divided into two phases:  
 
-## Objectives
-- Perform descriptive statistics on a sample dataset.
-- Use an LLM to answer natural language questions about the dataset.
-- Validate the correctness of LLM responses.
-- Document the process, successes, and failures.
-- Provide visualizations based on the dataset.
+1. **Phase 1** — Descriptive Statistics & Visualization  
+2. **Phase 2** — LLM Evaluation, Validation, and Reflections  
 
-## Visual Output
-Here is an example visualization generated from the sample dataset:
+---
 
-![Goals by Player](images/goals_chart.png)
+## 🔹 Phase 1: Descriptive Statistics  
 
-## Steps
-1. **Clean and preprocess the dataset**  
-   *(Dataset is not included in this repository as per assignment instructions.)*
-2. Compute basic descriptive statistics using Python (Pandas).
-3. Design prompts to interact with an LLM.
-4. Record LLM responses and analyze their accuracy.
-5. Summarize findings in `report.md`.
+In this phase, I performed exploratory data analysis on the provided dataset.  
 
-## Tools and Libraries
-- Python 3.x
-- Pandas
-- Matplotlib
-- OpenAI API (or similar for LLM)
+### ✅ Objectives
+- Clean and preprocess the dataset  
+- Compute descriptive statistics (mean, median, mode, std. dev, etc.)  
+- Generate summary tables and charts  
+- Document insights  
 
-## How to Run
-### Install dependencies:
-pip install -r requirements.txt
+### 📂 Files
+- `analysis.py` → Script to calculate descriptive statistics  
+- `clean_data.py` → Script for dataset cleaning/preprocessing  
+- `requirements.txt` → Python dependencies  
+- `goals_chart.png` → Visualization of player performance  
+- `report.md` → Written summary of results & insights  
 
+---
 
-### Run the analysis script:
+## 🔹 Phase 2: LLM Evaluation, Validation, and Reflections  
+
+In this phase, I used a Large Language Model (LLM) to evaluate the dataset, validate results, and reflect on performance.  
+
+### ✅ Objectives
+- Design structured prompts (simple → complex → stress-test)  
+- Collect LLM responses and analyze accuracy  
+- Validate against ground truth  
+- Provide reflections and recommendations  
+
+### 📂 Files
+- `prompts_phase2.md` → List of prompts used  
+- `llm_responses.md` → LLM responses with evaluations  
+- `qa_validation.csv` → Validation table in CSV format  
+- `qa_validation.md` → Validation notes and accuracy analysis  
+- `report_phase2.docx` → Final reflections & lessons learned  
+- `2025-08-16_llm_session.md` → Raw transcript of LLM session (evidence)  
+
+---
+
+## 📌 How to Run Phase 1 Code
+```bash
+# Install dependencies
+pip install -r requirements.txt  
+
+# Run analysis
 python analysis.py
-
-
-This will:
-- Print summary statistics
-- Identify the top scorer
-- Generate a visualization (saved as `images/goals_chart.png`)
-
-## Dataset Policy
-The dataset is not included in this repository as per assignment requirements.  
-To test the scripts:
-- Use your own dataset (e.g., sports data in CSV format).
-- Update file paths in `clean_data.py` and `analysis.py`.
-
-## Files in This Repository
-- `README.md` – Project documentation
-- `analysis.py` – Generates descriptive statistics and visualization
-- `clean_data.py` – Cleans and preprocesses raw data
-- `prompts.md` – LLM prompts used
-- `llm_responses.md` – LLM answers and evaluations
-- `report.md` – Research report and insights
-- `requirements.txt` – Dependencies
-- `images/goals_chart.png` – Visualization output
